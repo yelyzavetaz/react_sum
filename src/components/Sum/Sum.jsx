@@ -1,6 +1,5 @@
-export const Sum = props => (
+export const Sum = ({a = 0, b = 0}) => (
   <p>
-    Sum of {props.a || 0} and {props.b || 0} is{' '}
-    {(props.a || 0) + (props.b || 0)}
+    Sum of {a} and {b} is {a + b}
   </p>
 );
